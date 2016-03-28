@@ -49,10 +49,24 @@ Una vez hecho todo esto, y sin que salten errores, entonces hay que configurarlo
 ```bash
 yowsup-cli registration -C (1) -r (2) -p (3)
 ```
+
 1 - Aqúi va el codigo de país -> España: 34, USA: 1...
 2 - Aqí va el método del código -> sms: para que venga por sms, voice: para que venga en una llamada
 3 - Aquí va el número de país con el código -> 16304894220
 Ej.: `yowsup-cli registration -C 1 -r sms -p 16304894220`
+
+<b>Este paso da muchos errores, contacta conmigo por Telegram si te da algún error desconocido</b>
+
+Si todo salió bien, entonces saldrá algo así:
+
+```bash
+INFO:yowsup.common.http.warequest:{"status":"sent","length":6,"method":"sms","retry_after":46805,"sms_wait":46805,"voice_wait":65}
+
+status: sent
+retry_after: 46805
+length: 6
+method: sms
+```
 
 
 2. Iniciar sesión
@@ -60,6 +74,7 @@ Ej.: `yowsup-cli registration -C 1 -r sms -p 16304894220`
 ```bash
 yowsup-cli registration -C (1) -R (2) -p (3)
 ```
+
 1 - Aqúi va el codigo de país -> España: 34, USA: 1...
 2 - Aquí va el código de inicio de sesión -> Espera a que llegue el tuyo y envías la línea de código. Es de 6 dígitos: 123456
 3 - Aquí va el número de país con el código -> 16304894220
@@ -67,10 +82,11 @@ Ej.: `yowsup-cli registration -C 1 -r 123456 -p 16304894220`
 
 
 3. Contraseña de Whatsapp
+
 ```
 status: ok
 kind: free
-\> pw
+> pw
 ```
 
 Ahora tendrás que meter una contraseña secreta de Whatsapp de la cuenta. Para saberla, lo mejor es iniciar sesión con la futura cuenta del bot un el móvil, y instalar este apk:
@@ -86,13 +102,13 @@ Copia esa clave
 
 Ahora, metes la clave en donde ponía  > pw
 
-```
-\> pw njH+QGBqGXXXXXXXOFa+Wth5riM=
+```bash
+> pw njH+QGBqGXXXXXXXOFa+Wth5riM=
 ```
 
 Y aparecerá algo parecido a esto:
 
-```
+```bash
 price: US$0.99
 price_expiration: 1444272405
 currency: USD
@@ -102,7 +118,7 @@ cost: 0.99
 
 En login:, pones el número de teléfono con el codigo de pais.
 
-```
+```bash
 \> login: 16304894220
 type: existing
 expiration: 1472404969
