@@ -13,6 +13,7 @@ Whatsapp Bot
 
 
 
+
 ## Instalación
 <b>El bot es algo dificil de instalar, por lo que si nunca has trabajado con linux o servidores, mejor no lo intentes</b>
 
@@ -40,8 +41,10 @@ Si no aparece, entonces contacta con @M4STER_ANGEL por [Telegram](http://telegra
 
 
 
+
 ## Configuración
 Una vez hecho todo esto, y sin que salten errores, entonces hay que configurarlo:
+
 
 
 <b>1. Solicitar código de inicio de sesión</b>
@@ -72,6 +75,7 @@ method: sms
 ```
 
 
+
 <b>2. Iniciar sesión</b>
 
 ```bash
@@ -85,6 +89,7 @@ yowsup-cli registration -C (1) -R (2) -p (3)
 3 - Aquí va el número de país con el código -> 16304894220
 
 Ej.: `yowsup-cli registration -C 1 -r 123456 -p 16304894220`
+
 
 
 <b>3. Contraseña de Whatsapp</b>
@@ -102,6 +107,7 @@ Ahora tendrás que meter una contraseña secreta de Whatsapp de la cuenta. Para 
 Ten en cuenta que deberás tener la cuenta del bot en la app de whatsapp con package com.whatsapp, <b>no valen versiones modificadas</b>
 
 Copia esa clave
+
 
 
 <b>4. Finalizar login</b>
@@ -131,6 +137,8 @@ expiration: 1472404969
 ```
 
 <b>Un poco dificilillo, pero aquí se acaba la instalación</b>
+
+
 
 
 ## Iniciar bot
