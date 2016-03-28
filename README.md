@@ -51,8 +51,11 @@ yowsup-cli registration -C (1) -r (2) -p (3)
 ```
 
 1 - Aqúi va el codigo de país -> España: 34, USA: 1...
-2 - Aqí va el método del código -> sms: para que venga por sms, voice: para que venga en una llamada
+
+2 - Aqí va el método del código -> sms: para que venga por sms, voice: para que venga en una llamada 
+
 3 - Aquí va el número de país con el código -> 16304894220
+
 Ej.: `yowsup-cli registration -C 1 -r sms -p 16304894220`
 
 <b>Este paso da muchos errores, contacta conmigo por Telegram si te da algún error desconocido</b>
@@ -76,8 +79,11 @@ yowsup-cli registration -C (1) -R (2) -p (3)
 ```
 
 1 - Aqúi va el codigo de país -> España: 34, USA: 1...
+
 2 - Aquí va el código de inicio de sesión -> Espera a que llegue el tuyo y envías la línea de código. Es de 6 dígitos: 123456
+
 3 - Aquí va el número de país con el código -> 16304894220
+
 Ej.: `yowsup-cli registration -C 1 -r 123456 -p 16304894220`
 
 
