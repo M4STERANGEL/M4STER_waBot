@@ -12,6 +12,7 @@ Whatsapp Bot
 - De momento, el único sitio compatible es [Cloud9](http://c9.io)
 
 
+
 ## Instalación
 <b>El bot es algo dificil de instalar, por lo que si nunca has trabajado con linux o servidores, mejor no lo intentes</b>
 
@@ -35,4 +36,86 @@ sudo python setup.py install
 
 <b>Aquí pueden saltar muchos errores, por lo que es recomendable mirar en los [issues](https://github.com/M4STERANGEL/M4STER_waBot/issues) a ver si ya saltó.</b>
 
-Si no aparece, entonces contacta con @M4STERANGEL por GitHub o por [Telegram](http://telegram.me/M4STER_ANGEL) para intentar solucionarlo
+Si no aparece, entonces contacta con @M4STER_ANGEL por [Telegram](http://telegram.me/M4STER_ANGEL) para intentar solucionarlo
+
+
+
+## Configuración
+Una vez hecho todo esto, y sin que salten errores, entonces hay que configurarlo:
+
+
+1. Solicitar código de inicio de sesión
+
+```bash
+yowsup-cli registration -C (1) -r (2) -p (3)
+```
+1 - Aqúi va el codigo de país -> España: 34, USA: 1...
+2 - Aqí va el método del código -> sms: para que venga por sms, voice: para que venga en una llamada
+3 - Aquí va el número de país con el código -> 16304894220
+Ej.: `yowsup-cli registration -C 1 -r sms -p 16304894220`
+
+
+2. Iniciar sesión
+
+```bash
+yowsup-cli registration -C (1) -R (2) -p (3)
+```
+1 - Aqúi va el codigo de país -> España: 34, USA: 1...
+2 - Aquí va el código de inicio de sesión -> Espera a que llegue el tuyo y envías la línea de código. Es de 6 dígitos: 123456
+3 - Aquí va el número de país con el código -> 16304894220
+Ej.: `yowsup-cli registration -C 1 -r 123456 -p 16304894220`
+
+
+3. Contraseña de Whatsapp
+```
+status: ok
+kind: free
+\> pw
+```
+
+Ahora tendrás que meter una contraseña secreta de Whatsapp de la cuenta. Para saberla, lo mejor es iniciar sesión con la futura cuenta del bot un el móvil, y instalar este apk:
+
+[PassWord Extractor](https://github.com/mgp25/Chat-API/wiki/Extracting-password-from-device#using-apk)
+
+Ten en cuenta que deberás tener la cuenta del bot en la app de whatsapp con package com.whatsapp, <b>no valen versiones modificadas</b>
+
+Copia esa clave
+
+
+4. Finalizar login
+
+Ahora, metes la clave en donde ponía  > pw
+
+```
+\> pw njH+QGBqGXXXXXXXOFa+Wth5riM=
+```
+
+Y aparecerá algo parecido a esto:
+
+```
+price: US$0.99
+price_expiration: 1444272405
+currency: USD
+cost: 0.99
+\> login: 
+```
+
+En login:, pones el número de teléfono con el codigo de pais.
+
+```
+\> login: 16304894220
+type: existing
+expiration: 1472404969
+```
+
+<b>Un poco dificilillo, pero aquí se acaba la instalación></b>
+
+
+## Iniciar bot
+Para iniciar el bot:
+```bash
+cd
+cd M4STER_waBot
+cd w*
+python src/server.py
+```
