@@ -44,7 +44,7 @@ Si no aparece, entonces contacta con @M4STER_ANGEL por [Telegram](http://telegra
 Una vez hecho todo esto, y sin que salten errores, entonces hay que configurarlo:
 
 
-1. Solicitar código de inicio de sesión
+<b>1. Solicitar código de inicio de sesión</b>
 
 ```bash
 yowsup-cli registration -C (1) -r (2) -p (3)
@@ -72,7 +72,7 @@ method: sms
 ```
 
 
-2. Iniciar sesión
+<b>2. Iniciar sesión</b>
 
 ```bash
 yowsup-cli registration -C (1) -R (2) -p (3)
@@ -87,7 +87,7 @@ yowsup-cli registration -C (1) -R (2) -p (3)
 Ej.: `yowsup-cli registration -C 1 -r 123456 -p 16304894220`
 
 
-3. Contraseña de Whatsapp
+<b>3. Contraseña de Whatsapp</b>
 
 ```
 status: ok
@@ -104,7 +104,7 @@ Ten en cuenta que deberás tener la cuenta del bot en la app de whatsapp con pac
 Copia esa clave
 
 
-4. Finalizar login
+<b>4. Finalizar login</b>
 
 Ahora, metes la clave en donde ponía  > pw
 
@@ -130,7 +130,7 @@ type: existing
 expiration: 1472404969
 ```
 
-<b>Un poco dificilillo, pero aquí se acaba la instalación></b>
+<b>Un poco dificilillo, pero aquí se acaba la instalación</b>
 
 
 ## Iniciar bot
