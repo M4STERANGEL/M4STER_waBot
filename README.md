@@ -111,8 +111,6 @@ Ten en cuenta que deberás tener la cuenta del bot en la app de whatsapp con pac
 Copia esa clave
 
 <br>
-
-
 <b>4. Finalizar login</b>
 
 Ahora, metes la clave en donde ponía  > pw
