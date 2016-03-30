@@ -11,7 +11,9 @@ Whatsapp Bot
 # Instalación
 
 ## Sitios web compatibles
-- De momento, el único sitio compatible es [Cloud9](http://c9.io)
+- *De momento, el unico sitio donde se puede instalar es en host local.*
+- _Whatsapp bloquea todas las IPs que sean de servidores o VPS._
+- Sitios como Cloud9 o OVh o AWS no son compatibles
 
 
 
